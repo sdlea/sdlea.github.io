@@ -1,7 +1,9 @@
 #+TITLE:Welcome to Miachael Lea's Page
 #+Author:Michael Lea
+#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="style/org.css"/>
+#+OPTIONS: ^:nil H:2 <:nil
 
-* Anout me
+* About me
   - Email: [sdlea@protonmail.com]
   - 0
 * Developping
