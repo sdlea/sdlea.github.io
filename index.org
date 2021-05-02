@@ -1,0 +1,30 @@
+#+TITLE:Welcome to Miachael Lea's Page
+#+Author:Michael Lea
+
+* Anout me
+  - Email: [sdlea@protonmail.com]
+  - 0
+* Developping
+** TODO Resume
+   SCHEDULED: <2021-05-02 Sun>
+*** TODO Github Page
+    SCHEDULED: <2021-05-02 Sun>
+**** TODO intro
+**** TODO page style
+**** TODO project
+**** TODO note
+***** TODO learning
+****** TODO computer science
+       - Unix and Internet Fundamental
+       - LISP/Scheme
+       - Github
+       - docker
+****** TODO languages
+       - Deutsch
+       - Frankreich
+       - English
+       - 中文
+***** TODO reading
+      - GoT
+***** TODO known problems
+      - Arch Linux
