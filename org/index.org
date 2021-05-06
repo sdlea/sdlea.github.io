@@ -7,7 +7,7 @@
   - Email: [[https://protonmail.com/][sdlea@protonmail.com]]
   - 0
 * 笔记
-
+  - [[file:allfiles.org][ALL NOTES]]
 * Developping
 ** TODO Resume
    SCHEDULED: <2021-05-02 Sun>

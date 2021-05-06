@@ -5,8 +5,26 @@
      1. but didn't show the link in the html file
      2. try link:https url desc: mail addr
      3. CLOSED
-* Insert source code block
+* Insert source code block and execute it
   - <s then <TAB>
+  - https://orgmode.org/manual/Structure-of-Code-Blocks.html
+  - https://emacs.stackexchange.com/questions/19945/command-to-insert-code-block
   - #+NAME optional
   - supported languages
     - https://orgmode.org/manual/Languages.html#Languages
+  - CLOSED
+  - add how to execute a source block
+    - https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-lisp.html
+  - provide to init codes
+* TODO list files in directory recursively
+  - Function: directory-files-recursively directory regexp &optional include-directories predicate follow-symlinks
+  - https://www.gnu.org/software/emacs/manual/html_node/elisp/Contents-of-Directories.html
+  - https://emacs.stackexchange.com/questions/33332/recursively-list-all-files-and-sub-directories
+  - https://www.gnu.org/software/emacs/manual/html_node/emacs/Directories.html
+  - https://www.gnu.org/software/emacs/manual/html_node/elisp/Contents-of-Directories.html
+  - defun myself
+* TODO emacs regexp
+  - https://www.emacswiki.org/emacs/RegularExpression
+* ELISP
+  - https://www.emacswiki.org/emacs/ElispCookbook
+  - https://www.gnu.org/software/emacs/manual/html_node/eintr/

@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-05-06 Thu 16:49 -->
+<!-- 2021-05-06 Thu 15:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Define Template for Org-mode HTML Export HOWTO</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -228,82 +228,26 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Define Template for Org-mode HTML Export HOWTO</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org61a85a9">1. Motivation</a></li>
-<li><a href="#org54078ce">2. Source</a></li>
-<li><a href="#org81ade6c">3. Solution</a>
-<ul>
-<li><a href="#orgde50e7e">3.1. Org-mode Publishing Project</a></li>
-</ul>
-</li>
+<li><a href="#orgfc99d8e">1. <span class="todo TODO">TODO</span> list all notes with links recursively</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org61a85a9" class="outline-2">
-<h2 id="org61a85a9"><span class="section-number-2">1</span> Motivation</h2>
+<div id="outline-container-orgfc99d8e" class="outline-2">
+<h2 id="orgfc99d8e"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> list all notes with links recursively</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>Using Emacs Org-mode to template my blogs</li>
-<li>publishing org files or org projects</li>
+<li>ls or tree command</li>
+<li>content</li>
 </ul>
-</div>
-</div>
-<div id="outline-container-org54078ce" class="outline-2">
-<h2 id="org54078ce"><span class="section-number-2">2</span> Source</h2>
-<div class="outline-text-2" id="text-2">
-<ul class="org-ul">
-<li><a href="https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html">https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html</a></li>
-<li><a href="https://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html">https://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html</a></li>
-<li><a href="https://superuser.com/questions/444105/how-to-define-template-for-org-mode-html-export">https://superuser.com/questions/444105/how-to-define-template-for-org-mode-html-export</a></li>
-<li><a href="https://stackoverflow.com/questions/9920001/including-literal-html-code-in-org-mode-templates">https://stackoverflow.com/questions/9920001/including-literal-html-code-in-org-mode-templates</a></li>
-<li><a href="https://emacs.stackexchange.com/questions/34651/how-can-i-create-custom-org-mode-templates">https://emacs.stackexchange.com/questions/34651/how-can-i-create-custom-org-mode-templates</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org81ade6c" class="outline-2">
-<h2 id="org81ade6c"><span class="section-number-2">3</span> Solution</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-orgde50e7e" class="outline-3">
-<h3 id="orgde50e7e"><span class="section-number-3">3.1</span> Org-mode Publishing Project</h3>
-<div class="outline-text-3" id="text-3-1">
-<div class="org-src-container">
-<pre class="src src-lisp" id="org8a4c9a6"><span style="color: #eaeaea;">(</span><span style="color: #b9ca4a;">require</span> '<span style="color: #7aa6da;">ox-publish</span><span style="color: #eaeaea;">)</span>
-
-<span style="color: #eaeaea;">(</span>setq org-publish-project-alist
-      '<span style="color: #70c0b1;">(</span>
-        <span style="color: #e7c547;">(</span><span style="color: #70c0b1;">"org-notes"</span>
-         <span style="color: #c397d8;">:base-directory</span> <span style="color: #70c0b1;">"d:/My/Resume/github/sdlea.github.io/org"</span>
-         <span style="color: #c397d8;">:base-extension</span> <span style="color: #70c0b1;">"org"</span>
-         <span style="color: #c397d8;">:publishing-directory</span> <span style="color: #70c0b1;">"d:/My/Resume/github/sdlea.github.io"</span>
-         <span style="color: #c397d8;">:recursive</span> t
-         <span style="color: #c397d8;">:publishing-function</span> org-html-publish-to-html
-         <span style="color: #c397d8;">:headline-levels</span> 4
-         <span style="color: #c397d8;">:auto-preamble</span> t
-         <span style="color: #e7c547;">)</span>
-        <span style="color: #e7c547;">(</span><span style="color: #70c0b1;">"org-static"</span>
-         <span style="color: #c397d8;">:base-directory</span> <span style="color: #70c0b1;">"d:/My/Resume/github/sdlea.github.io/org"</span>
-         <span style="color: #c397d8;">:base-extension</span> <span style="color: #70c0b1;">"css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"</span>
-         <span style="color: #c397d8;">:publishing-directory</span> <span style="color: #70c0b1;">"d:/My/Resume/github/sdlea.github.io"</span>
-         <span style="color: #c397d8;">:recursive</span> t
-         <span style="color: #c397d8;">:publishing-function</span> org-publish-attachment
-         <span style="color: #e7c547;">)</span>
-        <span style="color: #e7c547;">(</span><span style="color: #70c0b1;">"org"</span>
-         <span style="color: #c397d8;">:components</span> <span style="color: #b9ca4a;">(</span><span style="color: #70c0b1;">"org-notes"</span> <span style="color: #70c0b1;">"org-static"</span><span style="color: #b9ca4a;">)</span>
-         <span style="color: #e7c547;">)</span><span style="color: #70c0b1;">)</span><span style="color: #eaeaea;">)</span>
-
-</pre>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-05-06 Thu 16:49</p>
+<p class="date">Created: 2021-05-06 Thu 15:47</p>
 <p class="validation"></p>
 </div>
 </body>
