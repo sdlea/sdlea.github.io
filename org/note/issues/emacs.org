@@ -1,0 +1,12 @@
+#+TITLE:Org-mode issues
+* Unable to relsove links when exported as html file
+  1. DESC: mail addr both link and link description
+  2. try #+OPTION:broken-links:t
+     1. but didn't show the link in the html file
+     2. try link:https url desc: mail addr
+     3. CLOSED
+* Insert source code block
+  - <s then <TAB>
+  - #+NAME optional
+  - supported languages
+    - https://orgmode.org/manual/Languages.html#Languages

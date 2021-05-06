@@ -1,0 +1,39 @@
+#+TITLE:Define Template for Org-mode HTML Export HOWTO
+* Motivation
+  - Using Emacs Org-mode to template my blogs
+  - publishing org files or org projects
+* Source
+  - https://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html
+  - https://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html
+  - https://superuser.com/questions/444105/how-to-define-template-for-org-mode-html-export
+  - https://stackoverflow.com/questions/9920001/including-literal-html-code-in-org-mode-templates
+  - https://emacs.stackexchange.com/questions/34651/how-can-i-create-custom-org-mode-templates
+* Solution
+** Org-mode Publishing Project
+   #+NAME: org-publish-project
+   #+BEGIN_SRC lisp
+(require 'ox-publish)
+
+(setq org-publish-project-alist
+      '(
+        ("org-notes"
+         :base-directory "d:/My/Resume/github/sdlea.github.io/org"
+         :base-extension "org"
+         :publishing-directory "d:/My/Resume/github/sdlea.github.io"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4
+         :auto-preamble t
+         )
+        ("org-static"
+         :base-directory "d:/My/Resume/github/sdlea.github.io/org"
+         :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+         :publishing-directory "d:/My/Resume/github/sdlea.github.io"
+         :recursive t
+         :publishing-function org-publish-attachment
+         )
+        ("org"
+         :components ("org-notes" "org-static")
+         )))
+
+   #+END_SRC

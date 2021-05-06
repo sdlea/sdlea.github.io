@@ -1,0 +1,25 @@
+#+TITLE:Git Issues
+
+* git push
+** refspec error
+   1. DESC: src refspec master does not match any when pushing commits in Git
+   2. git show-ref
+      1. to see refs
+      2. there is no master but main
+      3. git push origin main would work
+      4. CLOSED
+** no such device or address
+   1. ENV: Windows10 git in EMACS SHELL
+   2. clone with https url
+   3. manually edit the config file
+      1. change https url to ssh url
+      2. ERROR: /usr/lib/ssh/ssh_askpass no such file or directory
+         1. run git push in POWERSHELL
+   4. CLOSED
+* github page
+** cannot load local css
+   1. github raw file url
+   2. CLOSED
+   3. after reload the page, again failed
+   4. relative path without ./
+   5. CLOSED
