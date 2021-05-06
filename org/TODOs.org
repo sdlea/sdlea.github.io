@@ -1,0 +1,25 @@
+* TODO Resume
+  SCHEDULED: <2021-05-02 Sun>
+** TODO Github Page
+   SCHEDULED: <2021-05-02 Sun>
+*** TODO intro
+*** TODO page style
+*** TODO project
+*** TODO note
+**** TODO learning
+***** TODO computer science
+      - Unix and Internet Fundamental
+      - emacs
+        - LISP/Scheme
+        - org-mode
+      - Github
+      - docker
+***** TODO languages
+      - Deutsch
+      - Frankreich
+      - English
+      - 中文
+**** TODO reading
+     - GoT
+**** TODO known problems
+     - Arch Linux
