@@ -23,3 +23,8 @@
    3. after reload the page, again failed
    4. relative path without ./
    5. CLOSED
+* branch
+  - create a new brach and switch to it
+    - git branch <name>
+    - git checkout <name>
+    - or git checkout -b <name>

@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-05-07 Fri 15:52 -->
+<!-- 2021-05-07 Fri 15:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>&lrm;</title>
+<title>Learning Emacs Lisp</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -228,127 +228,79 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
+<h1 class="title">Learning Emacs Lisp</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb5cd9cc">1. <span class="todo TODO">TODO</span> Resume</a>
+<li><a href="#orgf0b910a">1. A Introduction to Programming in Emacs Lisp - eintr</a>
 <ul>
-<li><a href="#org3408930">1.1. <span class="todo TODO">TODO</span> Github Page</a>
+<li><a href="#orgf0dc497">1.1. 序言</a>
 <ul>
-<li><a href="#org4ae4d7c">1.1.1. <span class="todo TODO">TODO</span> intro</a></li>
-<li><a href="#orgafba455">1.1.2. <span class="todo TODO">TODO</span> page style</a></li>
-<li><a href="#org92173c9">1.1.3. <span class="todo TODO">TODO</span> project</a></li>
-<li><a href="#org6165c7b">1.1.4. <span class="todo TODO">TODO</span> note</a>
-<ul>
-<li><a href="#org1179ca0">1.1.4.1. <span class="todo TODO">TODO</span> learning</a></li>
-<li><a href="#org7f8144c">1.1.4.2. <span class="todo TODO">TODO</span> reading</a></li>
-<li><a href="#orge2f88f3">1.1.4.3. <span class="todo TODO">TODO</span> known problems</a></li>
+<li><a href="#org791dc1c">1.1.1. History of Lisp</a></li>
+<li><a href="#orge9b2735">1.1.2. 使用Emacs</a></li>
 </ul>
 </li>
+<li><a href="#orge06e793">1.2. List Processing</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#orgfec0ab6">2. <span class="todo TODO">TODO</span> finish eintr</a></li>
-<li><a href="#org7106bfd">3. <span class="todo TODO">TODO</span> metaweblog org2blog</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb5cd9cc" class="outline-2">
-<h2 id="orgb5cd9cc"><span class="section-number-2">1</span> <span class="todo TODO">TODO</span> Resume</h2>
+<div id="outline-container-orgf0b910a" class="outline-2">
+<h2 id="orgf0b910a"><span class="section-number-2">1</span> A Introduction to Programming in Emacs Lisp - eintr</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org3408930" class="outline-3">
-<h3 id="org3408930"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Github Page</h3>
+<div id="outline-container-orgf0dc497" class="outline-3">
+<h3 id="orgf0dc497"><span class="section-number-3">1.1</span> 序言</h3>
 <div class="outline-text-3" id="text-1-1">
-</div>
-<div id="outline-container-org4ae4d7c" class="outline-4">
-<h4 id="org4ae4d7c"><span class="section-number-4">1.1.1</span> <span class="todo TODO">TODO</span> intro</h4>
-</div>
-<div id="outline-container-orgafba455" class="outline-4">
-<h4 id="orgafba455"><span class="section-number-4">1.1.2</span> <span class="todo TODO">TODO</span> page style</h4>
-<div class="outline-text-4" id="text-1-1-2">
-<ul class="org-ul">
-<li><a href="http://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html">http://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-org92173c9" class="outline-4">
-<h4 id="org92173c9"><span class="section-number-4">1.1.3</span> <span class="todo TODO">TODO</span> project</h4>
-</div>
-<div id="outline-container-org6165c7b" class="outline-4">
-<h4 id="org6165c7b"><span class="section-number-4">1.1.4</span> <span class="todo TODO">TODO</span> note</h4>
-<div class="outline-text-4" id="text-1-1-4">
-</div>
-<div id="outline-container-org1179ca0" class="outline-5">
-<h5 id="org1179ca0"><span class="section-number-5">1.1.4.1</span> <span class="todo TODO">TODO</span> learning</h5>
-<div class="outline-text-5" id="text-1-1-4-1">
-</div>
 <ol class="org-ol">
-<li><a id="org7f3b5ad"></a><span class="todo TODO">TODO</span> computer science<br />
-<div class="outline-text-6" id="text-1-1-4-1-1">
-<ul class="org-ul">
-<li>Unix and Internet Fundamental</li>
-<li>emacs
-<ul class="org-ul">
-<li>LISP/Scheme</li>
-<li>org-mode</li>
-</ul></li>
-<li>Github</li>
-<li>docker</li>
-</ul>
-</div>
-</li>
-<li><a id="orgaf5ca4e"></a><span class="todo TODO">TODO</span> languages<br />
-<div class="outline-text-6" id="text-1-1-4-1-2">
-<ul class="org-ul">
-<li>Deutsch</li>
-<li>Frankreich</li>
-<li>English</li>
-<li>中文</li>
-</ul>
-</div>
-</li>
+<li><a id="org2a214f3"></a> <i>The GNU Emacs Lisp Reference Manual</i></li>
 </ol>
 </div>
-<div id="outline-container-org7f8144c" class="outline-5">
-<h5 id="org7f8144c"><span class="section-number-5">1.1.4.2</span> <span class="todo TODO">TODO</span> reading</h5>
-<div class="outline-text-5" id="text-1-1-4-2">
+<div id="outline-container-org791dc1c" class="outline-4">
+<h4 id="org791dc1c"><span class="section-number-4">1.1.1</span> History of Lisp</h4>
+<div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
-<li>GoT</li>
+<li>Lisp MIT late 1950s 为研究AI开发</li>
+<li>Maclisp MIT 1960s</li>
+<li>GNU Emacs Lisp 受 Maclisp 启发</li>
+<li>Common Lisp 1980s 成为标准</li>
+<li>GNU Emacs Lisp 比 Common Lisp更简单</li>
+<li>Emacs发行版中有可选扩展 <b>cl.el</b> 以支持Common Lisp特性</li>
+<li><a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">More at Wikipedia</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orge2f88f3" class="outline-5">
-<h5 id="orge2f88f3"><span class="section-number-5">1.1.4.3</span> <span class="todo TODO">TODO</span> known problems</h5>
-<div class="outline-text-5" id="text-1-1-4-3">
+<div id="outline-container-orge9b2735" class="outline-4">
+<h4 id="orge9b2735"><span class="section-number-4">1.1.2</span> 使用Emacs</h4>
+<div class="outline-text-4" id="text-1-1-2">
 <ul class="org-ul">
-<li>Arch Linux</li>
+<li>新手建议 读内置教程</li>
+<li><b>C-u</b> <i>universal argument</i> 不设置数字默认为4
+<ul class="org-ul">
+<li>更多参考 <i>Numric Arguments</i> 章节 <a href="#org2a214f3">1</a></li>
+</ul></li>
 </ul>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div id="outline-container-orgfec0ab6" class="outline-2">
-<h2 id="orgfec0ab6"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> finish eintr</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-</div>
-<div id="outline-container-org7106bfd" class="outline-2">
-<h2 id="org7106bfd"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> metaweblog org2blog</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orge06e793" class="outline-3">
+<h3 id="orge06e793"><span class="section-number-3">1.2</span> List Processing</h3>
+<div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
-<li><a href="https://github.com/org2blog/org2blog">https://github.com/org2blog/org2blog</a></li>
-<li><a href="https://melpa.org/#/metaweblog">https://melpa.org/#/metaweblog</a></li>
-<li><a href="https://www.emacswiki.org/emacs/WebloggerMode">https://www.emacswiki.org/emacs/WebloggerMode</a></li>
+<li>Lisp Stands for LISt Processing</li>
+<li>操作 <i>列表</i> 的编程语言</li>
+<li>小括号 标记 列表的边界</li>
+<li>单引号 有事可以产生一个列表 apostrophe <i>single-quote</i></li>
+<li>list 是 Lisp 的基础</li>
 </ul>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-05-07 Fri 15:52</p>
+<p class="date">Created: 2021-05-07 Fri 15:51</p>
 <p class="validation"></p>
 </div>
 </body>

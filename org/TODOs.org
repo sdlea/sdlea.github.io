@@ -4,6 +4,7 @@
    SCHEDULED: <2021-05-02 Sun>
 *** TODO intro
 *** TODO page style
+    - http://juanjose.garciaripoll.com/blog/org-mode-html-templates/index.html
 *** TODO project
 *** TODO note
 **** TODO learning
@@ -23,3 +24,9 @@
      - GoT
 **** TODO known problems
      - Arch Linux
+* TODO finish eintr
+  DEADLINE: <2021-05-12 Wed> SCHEDULED: <2021-05-07 Fri>
+* TODO metaweblog org2blog
+  - https://github.com/org2blog/org2blog
+  - https://melpa.org/#/metaweblog
+  - https://www.emacswiki.org/emacs/WebloggerMode

@@ -1,4 +1,22 @@
-#+TITLE:Reading A Introduction to Programming in Emacs Lisp
-* 序言
-  1. 相關閱讀 /The GNU Emacs Lisp Reference Manual/
-** History of Lisp
+#+TITLE: Learning Emacs Lisp
+* A Introduction to Programming in Emacs Lisp - eintr
+** 序言
+   1. <<相關閱讀>> /The GNU Emacs Lisp Reference Manual/
+*** History of Lisp
+    - Lisp MIT late 1950s 为研究AI开发
+    - Maclisp MIT 1960s
+    - GNU Emacs Lisp 受 Maclisp 启发
+    - Common Lisp 1980s 成为标准
+    - GNU Emacs Lisp 比 Common Lisp更简单
+    - Emacs发行版中有可选扩展 *cl.el* 以支持Common Lisp特性
+    - [[https://en.wikipedia.org/wiki/Lisp_(programming_language)][More at Wikipedia]]
+*** 使用Emacs
+    - 新手建议 读内置教程
+    - *C-u* /universal argument/ 不设置数字默认为4
+      - 更多参考 /Numric Arguments/ 章节 [[相關閱讀]]
+** List Processing
+   - Lisp Stands for LISt Processing
+   - 操作 /列表/ 的编程语言
+   - 小括号 标记 列表的边界
+   - 单引号 有事可以产生一个列表 apostrophe /single-quote/
+   - list 是 Lisp 的基础
