@@ -51,4 +51,42 @@
            - 电脑内部保存的原子和列表
            - /The word expression by itself can refer to either the printed representation, or to the atom or list as it is held internally in the computer./
            - 通常 表达式这个定义 使用上很模糊
-             - 在许多文本中 form 这个词被用作表达式的近义词
+           - 在许多文本中 form 这个词被用作表达式的近义词
+     - 考虑到对列表进行操作 列表中的原子是不可分割的(*unsplittable*)
+     - 组成Lisp 原子的的字母的意义与英语中的字符意义是不同的
+     - Lisp 中原子的种类
+       - 数字
+       - 符号(/symbols/)
+     - 原子这个词不经常使用
+       - 因为会指定特定种类的原子进行操作
+     - Lisp编程大多与列表中的 符号(symbols) 相关 有时是处理数字
+     - 双引号(doble quotation marks) 包括的文本 被认为是一个原子
+       - 标点符号和空格等一起作为一个原子
+       - 这种类型的原子成为 字符串(/string/)
+       - 由电脑打印出来的人类可读的内容
+       - 字符串作为与数字或符号不同的原子类型 使用方法也不同
+**** 列表中的空格
+     - 列表中空格的数量无关紧要
+     - 多余的空格和断行 可以使阅读代码更加易读
+**** GNU Emacs 帮助你输入列表
+     - <TAB> 按键 自动缩进
+     - <M-C-\> 空白符号
+     - 括号匹配
+*** 运行一个程序
+    - 任何 列表 在Lisp中都是可运行的程序
+    - 运行(/evaluate/) 程序 电脑会做
+      1. 除了返回列表本身之外不做任何事情
+      2. 将列表的第一个 符号 当作命令来做对应的事情
+      3. 发送错误信息
+    - 放在列表前面的 单引号 被称作 引用(/quote/)
+      - 当产生一个列表时 它告诉Lisp只产生一个列表 而不做其他事情
+      - 如果没有单引号 第一个 符号 会被当作命令来执行
+        - 这些命令在Lisp中被称作 函数(/functions/)
+    - 将光标置于右手边的括号后面 然后输入 <C-x C-e> 结果将会呈现在 回应区(/echo area/)
+    - Lisp /interpreter/ Lisp编译器
+      - 词来自于 想出表达式需要做的工作的的人 ???
+      - The name of the Lisp interpreter comes from the word for the task done by a human who comes up with the meaning of an expression—who interprets it.
+    - 也可以运行 不是 作为列表一部分的原子
+      - 没有被包围在括号里的原子
+    - Lisp编译器将人类可读的表达式转换成计算机语言
+*** 产生错误信息

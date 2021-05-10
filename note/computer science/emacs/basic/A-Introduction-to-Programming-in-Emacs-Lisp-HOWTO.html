@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-05-10 Mon 11:17 -->
+<!-- 2021-05-10 Mon 17:23 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Learning Emacs Lisp</title>
@@ -246,8 +246,12 @@ for the JavaScript code in this tag.
 <li><a href="#org4bb5928">1.2.1. Lisp Lists</a>
 <ul>
 <li><a href="#org7f42268">1.2.1.1. Lisp Atoms</a></li>
+<li><a href="#orgf990018">1.2.1.2. 列表中的空格</a></li>
+<li><a href="#orgaa41193">1.2.1.3. GNU Emacs 帮助你输入列表</a></li>
 </ul>
 </li>
+<li><a href="#orgd23a633">1.2.2. 运行一个程序</a></li>
+<li><a href="#org6d4e548">1.2.3. 产生错误信息</a></li>
 </ul>
 </li>
 </ul>
@@ -357,22 +361,94 @@ for the JavaScript code in this tag.
 <ul class="org-ul">
 <li>电脑内部保存的原子和列表</li>
 <li><i>The word expression by itself can refer to either the printed representation, or to the atom or list as it is held internally in the computer.</i></li>
-<li>通常 表达式这个定义 使用上很模糊
-<ul class="org-ul">
+<li>通常 表达式这个定义 使用上很模糊</li>
 <li>在许多文本中 form 这个词被用作表达式的近义词</li>
 </ul></li>
 </ul></li>
 </ul></li>
+<li>考虑到对列表进行操作 列表中的原子是不可分割的(<b>unsplittable</b>)</li>
+<li>组成Lisp 原子的的字母的意义与英语中的字符意义是不同的</li>
+<li>Lisp 中原子的种类
+<ul class="org-ul">
+<li>数字</li>
+<li>符号(<i>symbols</i>)</li>
+</ul></li>
+<li>原子这个词不经常使用
+<ul class="org-ul">
+<li>因为会指定特定种类的原子进行操作</li>
+</ul></li>
+<li>Lisp编程大多与列表中的 符号(symbols) 相关 有时是处理数字</li>
+<li>双引号(doble quotation marks) 包括的文本 被认为是一个原子
+<ul class="org-ul">
+<li>标点符号和空格等一起作为一个原子</li>
+<li>这种类型的原子成为 字符串(<i>string</i>)</li>
+<li>由电脑打印出来的人类可读的内容</li>
+<li>字符串作为与数字或符号不同的原子类型 使用方法也不同</li>
 </ul></li>
 </ul>
 </div>
 </div>
+<div id="outline-container-orgf990018" class="outline-5">
+<h5 id="orgf990018"><span class="section-number-5">1.2.1.2</span> 列表中的空格</h5>
+<div class="outline-text-5" id="text-1-2-1-2">
+<ul class="org-ul">
+<li>列表中空格的数量无关紧要</li>
+<li>多余的空格和断行 可以使阅读代码更加易读</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgaa41193" class="outline-5">
+<h5 id="orgaa41193"><span class="section-number-5">1.2.1.3</span> GNU Emacs 帮助你输入列表</h5>
+<div class="outline-text-5" id="text-1-2-1-3">
+<ul class="org-ul">
+<li>&lt;TAB&gt; 按键 自动缩进</li>
+<li>&lt;M-C-\&gt; 空白符号</li>
+<li>括号匹配</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd23a633" class="outline-4">
+<h4 id="orgd23a633"><span class="section-number-4">1.2.2</span> 运行一个程序</h4>
+<div class="outline-text-4" id="text-1-2-2">
+<ul class="org-ul">
+<li>任何 列表 在Lisp中都是可运行的程序</li>
+<li>运行(<i>evaluate</i>) 程序 电脑会做
+<ol class="org-ol">
+<li>除了返回列表本身之外不做任何事情</li>
+<li>将列表的第一个 符号 当作命令来做对应的事情</li>
+<li>发送错误信息</li>
+</ol></li>
+<li>放在列表前面的 单引号 被称作 引用(<i>quote</i>)
+<ul class="org-ul">
+<li>当产生一个列表时 它告诉Lisp只产生一个列表 而不做其他事情</li>
+<li>如果没有单引号 第一个 符号 会被当作命令来执行
+<ul class="org-ul">
+<li>这些命令在Lisp中被称作 函数(<i>functions</i>)</li>
+</ul></li>
+</ul></li>
+<li>将光标置于右手边的括号后面 然后输入 &lt;C-x C-e&gt; 结果将会呈现在 回应区(<i>echo area</i>)</li>
+<li>Lisp <i>interpreter</i> Lisp编译器
+<ul class="org-ul">
+<li>词来自于 想出表达式需要做的工作的的人 ???</li>
+<li>The name of the Lisp interpreter comes from the word for the task done by a human who comes up with the meaning of an expression—who interprets it.</li>
+</ul></li>
+<li>也可以运行 不是 作为列表一部分的原子
+<ul class="org-ul">
+<li>没有被包围在括号里的原子</li>
+</ul></li>
+<li>Lisp编译器将人类可读的表达式转换成计算机语言</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6d4e548" class="outline-4">
+<h4 id="org6d4e548"><span class="section-number-4">1.2.3</span> 产生错误信息</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-05-10 Mon 11:17</p>
+<p class="date">Created: 2021-05-10 Mon 17:23</p>
 <p class="validation"></p>
 </div>
 </body>
