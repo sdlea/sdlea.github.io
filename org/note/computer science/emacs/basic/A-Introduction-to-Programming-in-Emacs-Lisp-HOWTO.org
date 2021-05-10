@@ -20,3 +20,35 @@
    - 小括号 标记 列表的边界
    - 单引号 有事可以产生一个列表 apostrophe /single-quote/
    - list 是 Lisp 的基础
+*** Lisp Lists
+    - 空格 换行等 不影响列表内容
+    - 数据和程序都以同样的方式呈现
+      - 即单词(字符)、数字或其他列表组成的列表
+      - 以空格分割 被括号包围
+      - 由于程序跟数据以同样的方式呈现 所以程序可以简单的作为数据提供给另外一个程序
+      - 括号内包含其他标点符号的语句 不能算做列表
+        - 除非用引号包括
+**** Lisp Atoms
+     - 原子 取不可分割/切割的意思
+     - 列表中使用的单词(Words)被分割后就与原来的意义不同
+     - 列表可以被分割
+     - 原子 以空格分离 可以紧邻括号
+     - 定义上
+       - 列表由
+         - 括号
+           - 包括住的 *以空格分离* 的原子
+           - 或 包括的其他列表
+           - 或 包括的原子和列表的
+     - 列表可以只包含一个原子或不含任何东西
+       - () 不包含任何东西的列表
+       - 成为 空列表(/empty list/)
+       - 一个空列表被认为即是一个原子也是一个列表
+     - S-表达式(/symbolic expressions s-expressions/)
+       - 被 /打印/ 出来的 原子和列表(/the printed representation/) 被称为 S表达式
+       - 表达式(expression) 本身可以指代
+         - 被打印出来的内容的本身
+         - 或者 原子和列表
+           - 电脑内部保存的原子和列表
+           - /The word expression by itself can refer to either the printed representation, or to the atom or list as it is held internally in the computer./
+           - 通常 表达式这个定义 使用上很模糊
+             - 在许多文本中 form 这个词被用作表达式的近义词

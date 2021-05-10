@@ -6,7 +6,7 @@
 <!-- 2021-05-10 Mon 11:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Learning Emacs Lisp</title>
+<title>Wine Tasting</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -228,148 +228,81 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Learning Emacs Lisp</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orgf0b910a">1. A Introduction to Programming in Emacs Lisp - eintr</a>
-<ul>
-<li><a href="#orgf0dc497">1.1. 序言</a>
-<ul>
-<li><a href="#org791dc1c">1.1.1. History of Lisp</a></li>
-<li><a href="#orge9b2735">1.1.2. 使用Emacs</a></li>
-</ul>
-</li>
-<li><a href="#orge06e793">1.2. List Processing</a>
-<ul>
-<li><a href="#org4bb5928">1.2.1. Lisp Lists</a>
-<ul>
-<li><a href="#org7f42268">1.2.1.1. Lisp Atoms</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orgf0b910a" class="outline-2">
-<h2 id="orgf0b910a"><span class="section-number-2">1</span> A Introduction to Programming in Emacs Lisp - eintr</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-orgf0dc497" class="outline-3">
-<h3 id="orgf0dc497"><span class="section-number-3">1.1</span> 序言</h3>
-<div class="outline-text-3" id="text-1-1">
-<ol class="org-ol">
-<li><a id="org2a214f3"></a> <i>The GNU Emacs Lisp Reference Manual</i></li>
-</ol>
-</div>
-<div id="outline-container-org791dc1c" class="outline-4">
-<h4 id="org791dc1c"><span class="section-number-4">1.1.1</span> History of Lisp</h4>
-<div class="outline-text-4" id="text-1-1-1">
-<ul class="org-ul">
-<li>Lisp MIT late 1950s 为研究AI开发</li>
-<li>Maclisp MIT 1960s</li>
-<li>GNU Emacs Lisp 受 Maclisp 启发</li>
-<li>Common Lisp 1980s 成为标准</li>
-<li>GNU Emacs Lisp 比 Common Lisp更简单</li>
-<li>Emacs发行版中有可选扩展 <b>cl.el</b> 以支持Common Lisp特性</li>
-<li><a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">More at Wikipedia</a></li>
-</ul>
-</div>
-</div>
-<div id="outline-container-orge9b2735" class="outline-4">
-<h4 id="orge9b2735"><span class="section-number-4">1.1.2</span> 使用Emacs</h4>
-<div class="outline-text-4" id="text-1-1-2">
-<ul class="org-ul">
-<li>新手建议 读内置教程</li>
-<li><b>C-u</b> <i>universal argument</i> 不设置数字默认为4
-<ul class="org-ul">
-<li>更多参考 <i>Numric Arguments</i> 章节 <a href="#org2a214f3">1</a></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="outline-container-orge06e793" class="outline-3">
-<h3 id="orge06e793"><span class="section-number-3">1.2</span> List Processing</h3>
-<div class="outline-text-3" id="text-1-2">
-<ul class="org-ul">
-<li>Lisp Stands for LISt Processing</li>
-<li>操作 <i>列表</i> 的编程语言</li>
-<li>小括号 标记 列表的边界</li>
-<li>单引号 有事可以产生一个列表 apostrophe <i>single-quote</i></li>
-<li>list 是 Lisp 的基础</li>
-</ul>
-</div>
-<div id="outline-container-org4bb5928" class="outline-4">
-<h4 id="org4bb5928"><span class="section-number-4">1.2.1</span> Lisp Lists</h4>
-<div class="outline-text-4" id="text-1-2-1">
-<ul class="org-ul">
-<li>空格 换行等 不影响列表内容</li>
-<li>数据和程序都以同样的方式呈现
-<ul class="org-ul">
-<li>即单词(字符)、数字或其他列表组成的列表</li>
-<li>以空格分割 被括号包围</li>
-<li>由于程序跟数据以同样的方式呈现 所以程序可以简单的作为数据提供给另外一个程序</li>
-<li>括号内包含其他标点符号的语句 不能算做列表
-<ul class="org-ul">
-<li>除非用引号包括</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-<div id="outline-container-org7f42268" class="outline-5">
-<h5 id="org7f42268"><span class="section-number-5">1.2.1.1</span> Lisp Atoms</h5>
-<div class="outline-text-5" id="text-1-2-1-1">
-<ul class="org-ul">
-<li>原子 取不可分割/切割的意思</li>
-<li>列表中使用的单词(Words)被分割后就与原来的意义不同</li>
-<li>列表可以被分割</li>
-<li>原子 以空格分离 可以紧邻括号</li>
-<li>定义上
-<ul class="org-ul">
-<li>列表由
-<ul class="org-ul">
-<li>括号
-<ul class="org-ul">
-<li>包括住的 <b>以空格分离</b> 的原子</li>
-<li>或 包括的其他列表</li>
-<li>或 包括的原子和列表的</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>列表可以只包含一个原子或不含任何东西
-<ul class="org-ul">
-<li>() 不包含任何东西的列表</li>
-<li>成为 空列表(<i>empty list</i>)</li>
-<li>一个空列表被认为即是一个原子也是一个列表</li>
-</ul></li>
-<li>S-表达式(<i>symbolic expressions s-expressions</i>)
-<ul class="org-ul">
-<li>被 <i>打印</i> 出来的 原子和列表(<i>the printed representation</i>) 被称为 S表达式</li>
-<li>表达式(expression) 本身可以指代
-<ul class="org-ul">
-<li>被打印出来的内容的本身</li>
-<li>或者 原子和列表
-<ul class="org-ul">
-<li>电脑内部保存的原子和列表</li>
-<li><i>The word expression by itself can refer to either the printed representation, or to the atom or list as it is held internally in the computer.</i></li>
-<li>通常 表达式这个定义 使用上很模糊
-<ul class="org-ul">
-<li>在许多文本中 form 这个词被用作表达式的近义词</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
+<h1 class="title">Wine Tasting</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">原产国</th>
+<th scope="col" class="org-left">产地</th>
+<th scope="col" class="org-left">葡萄品种</th>
+<th scope="col" class="org-left">风格</th>
+<th scope="col" class="org-left">年份</th>
+<th scope="col" class="org-left">香气</th>
+<th scope="col" class="org-left">甜度</th>
+<th scope="col" class="org-left">酸度</th>
+<th scope="col" class="org-left">口感</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">智利</td>
+<td class="org-left">中央山谷</td>
+<td class="org-left">梅洛</td>
+<td class="org-left">干红</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">++</td>
+<td class="org-left">---</td>
+<td class="org-left">\+++</td>
+<td class="org-left">++</td>
+</tr>
+
+<tr>
+<td class="org-left">Chile</td>
+<td class="org-left">Central Valley</td>
+<td class="org-left">MErlot</td>
+<td class="org-left">Dry Red</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">++</td>
+<td class="org-left">---</td>
+<td class="org-left">\+++</td>
+<td class="org-left">++</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="postamble" class="status">
 <p class="date">Created: 2021-05-10 Mon 11:17</p>
