@@ -16,4 +16,24 @@
   2. obscure and often pretentious language marked by circumlocutions and long words
   3. confused unintellogible language
      1. a strange, outlandish, or barbarous language or dialect
-     2. a hybrid language or dialect simplified in vocubulary and grammar and used for communication between peoples of different speech
+     2. a hybrid language or dialect simplified in vocubulary and grammar and used for communication between peoples of different speechx
+- dicipher
+  1. transitive verb
+  2. DECODE: to conert (something, such as a coded message) into intelligible form
+- articulate
+  1. adjective
+     1. expressing oneself readily,clearly,and effectively
+        1. divided into syllables or words meaning arranged
+        2. able to speak
+     2. consisting of segments united by joints:JOINED
+        1. distinctly marked off
+  2. transitive verb
+     1. to give clear and effective untterance to: to put into words
+        1. to utter distinctly
+        2. to give definition to (something,such a shape or object)
+        3. to give shape or expression to (sonething, such as a theme or concept)
+     2. to unite by or as if by means of a join: JOINT
+        1. to form or fit into a systematic whole
+  3. intransitive verb
+     1. to utter clear and understandable sounds
+     2. to become united or connected by or as if by a joint
