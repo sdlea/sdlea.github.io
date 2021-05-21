@@ -1,0 +1,19 @@
+digraph A {
+        parent [
+        subgraph x11 {
+                label="X11";
+                shape=box;
+                subgraph shell {
+                        shape=plaintext;
+                        S [label="zsh"];
+                        A [shape=box label="Kernel"];
+                        S -> A;
+                        A -> S;
+                }
+                a;
+                }];
+        child [
+               emacs;];
+
+        parent:a -> child:emacs;
+}

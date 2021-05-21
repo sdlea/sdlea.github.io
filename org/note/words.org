@@ -37,3 +37,23 @@
   3. intransitive verb
      1. to utter clear and understandable sounds
      2. to become united or connected by or as if by a joint
+- compatible
+  1. adjective
+     1. capable of existing together in harmony
+     2. capable of cross-fertillzing freely or uniting vegetatively
+     3. capable of forming a homogeneous mixture that neither separates nor is altered by chemical interaction
+     4. capable of being used in transfusion or grafting without reaction (such as agglutination or tissue rejection)
+     5. designed to work with aother device or system without modification
+        especially: being a computer designed to operate in the same manner and use the same software as another coomputer
+  2. noun
+     1. a device(such as a computer) or system designed to be used with another device or system without modification
+- acyclic
+  1. adjective
+     1. mot dispaying or forming part of a cycle
+        1. (of a woman) not having a menstrual cycle
+     2. (of a compound or molecule) containing no rings of atoms
+- discrete
+  1. adjective
+     1. constituting a seperate entity: individually distinct
+     2. consisting of distinct or unconnected elements
+        1. taking on or having a finite or countably infinite value of values

@@ -1,0 +1,32 @@
+#+TITLE:Write DOT in Emacs
+* Install Graphviz
+  - Windows 10
+  - Chocolatey
+    - choco install graphviz
+* Load graphviz-dot-mode
+  - require-package
+  - compile dot file
+    - error: dot command not executable
+    - Change soure code
+      - use fixed exe file
+    - DONE
+    - There are better ways out there
+    - env export
+  - HOWTO compile png file to a customized dir??
+* DOT Language Guide
+  - dot 带有指向的层级图
+  - 命令行程序 web可视化服务
+  - nodes
+  - edge spines
+  - edge labels
+  - "record" shapes
+    - with "ports"
+** 基本图形
+   - DOT画图经历四个阶段
+     1. 打破循环
+        1. 反转特定循环的edges的方向
+        2. 给mode独立不同的排名或层次
+           1. 从上到下的画图中 排名决定Y坐标轴
+           2. Edges that span more than one rank are broken into chains of “virtual” nodes and unit-length edges
+        3. 给以排名给nodes排序 放置交叉
+        4. 设定X坐标轴
