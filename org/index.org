@@ -1,7 +1,7 @@
 #+TITLE:Welcome to Miachael Lea's Page
 #+Author:Michael Lea
 
-#+OPTIONS: ^:nil H:2 <:nil
+#+OPTIONS: ^:nil H:2 <:nil toc:nil
 
 * About me
   - Email: [[https://protonmail.com/][sdlea@protonmail.com]]
