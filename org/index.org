@@ -1,6 +1,6 @@
 #+TITLE:Welcome to Miachael Lea's Page
 #+Author:Michael Lea
-##+HTML_HEAD:<link rel="stylesheet" type="text/css" href="style/org.css"/>
+
 #+OPTIONS: ^:nil H:2 <:nil
 
 * About me
