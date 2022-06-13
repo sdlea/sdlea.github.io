@@ -1,12 +1,7 @@
 #+TITLE:Welcome to Miachael Lea's Page
 #+Author:Michael Lea
-#+HTML_HEAD:<link rel="stylesheet" type="text/css" href="style/org.css"/>
+##+HTML_HEAD:<link rel="stylesheet" type="text/css" href="style/org.css"/>
 #+OPTIONS: ^:nil H:2 <:nil
 
 * About me
   - Email: [[https://protonmail.com/][sdlea@protonmail.com]]
-  - 0
-* 笔记
-  - [[file:allfiles.org][ALL NOTES]]
-* 待办
-  - [[./TODOs.org][TODOs]]
