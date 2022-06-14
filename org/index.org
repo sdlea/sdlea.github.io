@@ -4,4 +4,5 @@
 #+OPTIONS: ^:nil H:2 <:nil toc:nil
 
 * About me
-  - Email: [[https://protonmail.com/][sdlea@protonmail.com]]
+  - Email: [[mailto:sdlea@protonmail.com][sdlea@protonmail.com]]
+  -
